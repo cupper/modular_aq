@@ -209,21 +209,44 @@ int main(int argc, const char* argv[])
 
 }
 
-/* OUTPUT:
+/* OUTPUT (release):
 
 Start PUSH test, n = 9000000
-active_queue = 3942 milliseconds
-io_service   = 1425 milliseconds
-io_strand    = 1150 milliseconds
+active_queue = 1113 milliseconds
+io_service   = 498 milliseconds
+io_strand    = 380 milliseconds
 
 Start CONCURRENT_PUSH test, th = 10n = 1000000
-active_queue = 123651 milliseconds
-io_service   = 22823 milliseconds
-io_strand    = 20731 milliseconds
+active_queue = 40976 milliseconds
+io_service   = 43219 milliseconds
+io_strand    = 22766 milliseconds
 
 Start CONCURRENT_PUSH test, th = 10n = 2000000
-active_queue = 233529 milliseconds
-io_service   = 45520 milliseconds
-io_strand    = 41497 milliseconds
+active_queue = 78602 milliseconds
+io_service   = 66920 milliseconds
+io_strand    = 42301 milliseconds
+
+if load_average is commented
+
+Start PUSH test, n = 9000000
+active_queue = 478 milliseconds
+io_service   = 498 milliseconds
+io_strand    = 380 milliseconds
+
+Start CONCURRENT_PUSH test, th = 10n = 1000000
+active_queue = 28736 milliseconds
+io_service   = 20082 milliseconds
+io_strand    = 22657 milliseconds
+
+Start CONCURRENT_PUSH test, th = 10n = 2000000
+active_queue = 62228 milliseconds
+io_service   = 38836 milliseconds
+io_strand    = 43335 milliseconds
+
+Start CONCURRENT_PUSH test, th = 10n = 2000000
+active_queue = 66485 milliseconds
+io_service   = 68901 milliseconds
+io_strand    = 44583 milliseconds
+
  */
 
